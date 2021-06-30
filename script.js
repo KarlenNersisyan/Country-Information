@@ -60,7 +60,7 @@ const errorMessage = (message) => {
 };
 
 const giveListCountries = () => {
-  clearContainer();
+  removeCountryContainer();
   loadingSpinner.style.display = "inline-block";
   fetch("https://restcountries.eu/rest/v2/all")
     .then((response) => response.json())
@@ -91,9 +91,9 @@ const countryError = (countryName) => {
     });
 };
 
-const clearContainer = () => {
-  const allChildren = Array.from(countriesContainer.children);
-  allChildren.forEach((elem) => elem.remove());
+const removeCountryContainer = () => {
+  const countryItem = Array.from(countriesContainer.children);
+  countryItem.forEach((elem) => elem.remove());
 };
 
 const getCountry = () => {
@@ -106,7 +106,7 @@ const getCountry = () => {
 };
 
 searchBtn.addEventListener("click", () => {
-  clearContainer();
+  removeCountryContainer();
   countryError(search.value);
 });
 
