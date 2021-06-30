@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="@nersisyan_karl" />
+    <!-- Facebook Debugger Start-->
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Country Information" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <!-- Facebook Debugger End-->
+
+    <!-- Icon Start -->
+    <link rel="icon" href="" />
+    <!-- Icon End -->
+
+    <!-- Favicon - Start -->
+
+    <!-- Favicon - End -->
+    <!-- Fontawesome Start -->
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome End -->
+    <!-- Google Fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Benne&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End -->
+    <!-- Normalize - Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Normalize - End -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+
+    <title>CountryInformation</title>
+  </head>
+  <body>
+    <header>
+      <div class="search-container">
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Find your desired country here ..."
+            id="query"
+            name="country"
+            class="search-field"
+          />
+          <button class="search-button" id="search-btn">
+            <i class="fal fa-search-location"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="header-search">
+        <button class="countries-list-btn" id="countries-list">
+          Countries List
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="countries"></div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loadingSpinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
